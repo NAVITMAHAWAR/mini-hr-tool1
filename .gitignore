@@ -1,18 +1,13 @@
-# Node modules
+# node
 node_modules/
-
-# Environment variables
 .env
 
-# Logs
-logs
+# build
+dist/
+build/
+
+# logs
 *.log
-npm-debug.log*
 
-# OS files
+# system
 .DS_Store
-
-# Build
-dist
-build
-backend/node_modules/
