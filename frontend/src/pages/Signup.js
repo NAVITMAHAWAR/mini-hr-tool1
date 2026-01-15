@@ -3,6 +3,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 
+const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+
 const Signup = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -18,7 +20,7 @@ const Signup = () => {
         });
         return;
       }
-      await axios.post("http://localhost:5000/api/users/register", {
+      await axios.post(`${API_URL}/api/users/register`, {
         name,
         email,
         password,

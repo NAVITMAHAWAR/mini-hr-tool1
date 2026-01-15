@@ -11,7 +11,7 @@ const Home = () => {
             Login
           </Link>
           <Link
-            to="/register"
+            to="/signup"
             className="bg-white text-blue-600 px-4 py-1 rounded hover:bg-gray-200"
           >
             Sign Up
