@@ -31,6 +31,10 @@ const seedAdmin = async () => {
 };
 seedAdmin();
 
+app.get("/", (req, res) => {
+  res.send("Mini HR Backend is running 🚀");
+});
+
 app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/leaves", require("./routes/leaveRoutes"));
 app.use("/api/attendance", require("./routes/attendanceRoutes"));
